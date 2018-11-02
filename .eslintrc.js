@@ -14,9 +14,12 @@ module.exports = {
     'standard'
   ],
   plugins: [
-    'vue',
+    'html',
+    'standard',
+    'vue'
   ],
   rules: {
+    'linebreak-style': ['error', 'unix'],
     'arrow-parens': 0,
     'generator-star-spacing': 0,
     'no-debugger': process.env.NODE_ENV === 'production' ? 2 : 0,
