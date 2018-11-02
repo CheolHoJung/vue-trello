@@ -1,18 +1,43 @@
-# trello
+# 요구사항
 
-> A Vue.js project
+## 인증
 
-## Build Setup
+1. 로그인
+2. 로그아웃
 
-``` bash
-# install dependencies
-npm install
+## 보드작업
 
-# serve with hot reload at localhost:8080
-npm run dev
+|        | 생성 | 조회 | 수정             | 이동 | 삭제 |
+| ------ | ---- | ---- | ---------------- | ---- | ---- |
+| 보드   | O    | O    | O (타이틀, 색상) | X    | O    |
+| 리스트 | O    | X    | O (타이틀)       | O    | O    |
+| 카드   | O    | O    | O (타이틀, 설명) | O    | O    |
 
-# build for production with minification
-npm run build
-```
+## 기본 플로우
 
-For detailed explanation on how things work, consult the [docs for vue-loader](http://vuejs.github.io/vue-loader).
+1. 홈페이지 접속
+2. 로그인 페이지
+3. 홈페이지 리다이렉트
+   1. 보드목록 조회
+4. 보드 생성
+   1. Todo, Doing, Done 자동 생성
+   2. 보드 세팅
+      1. 색상 설정
+   3. 보드 삭제
+5. 보드 조회
+6. 카드 생성
+   1. 카드 상세조회
+   2. 카드 수정
+   3. 카드 이동
+   4. 카드 삭제
+
+## 추가 기능
+
+1. 보드 수정
+   1. 색상 변경
+   2. 타이틀 변경
+2. 리스트 생성
+3. 리스트 수정
+4. 리스트 이동
+   1. 타이틀 변경
+5. 리스트 삭제
