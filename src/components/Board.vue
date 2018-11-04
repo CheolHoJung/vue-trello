@@ -2,6 +2,11 @@
   <div>
     Board
     <div>bid: {{bid}}</div>
+    
+    <br />
+    <router-link :to="`/b/${bid}/c/1`">Card 1</router-link>
+    <router-link :to="`/b/${bid}/c/2`">Card 2</router-link>
+    <router-view></router-view>
   </div>
 </template>
 
