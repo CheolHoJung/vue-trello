@@ -19,3 +19,9 @@ const request = (method, url, data) => {
       throw Error(result)
     })
 }
+
+export const board = {
+  fetch() {
+    return request('get', '/boards')
+  }
+}
