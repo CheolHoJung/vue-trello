@@ -12,7 +12,7 @@ const request = (method, url, data) => {
     method,
     url: DOMAIN + url,
     data
-  }).done(result => result.data)
+  }).then(result => result.data)
     .catch(result => {
       const {status} = result.response
       if (status === UNAUTHORIZED) return onUnauthorized()
