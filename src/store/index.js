@@ -43,8 +43,8 @@ const store = new Vuex.Store({
                 commit('SET_BOARDS', data.list)
             })
         },
-        LOGIN({commit}, {email, pasword}) {
-            return api.auth.login(email, pasword)
+        LOGIN({commit}, {email, password}) {
+            return api.auth.login(email, password)
                 .then(({accessToken}) => commit('LOGIN', accessToken))
         }
     }
