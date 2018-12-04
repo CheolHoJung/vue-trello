@@ -86,6 +86,7 @@ export default {
       this.cDragger.on('drop', (el, wrapper, target, siblings) => {
         const targetCard = {
           id: el.dataset.cardId * 1,
+          listId: el.dataset.listId * 1,
           pos: 65535
         }
 
@@ -103,6 +104,7 @@ export default {
         this.UPDATE_CARD(targetCard)
       })
     },
+    
     onShowSettings() {
       this.SET_IS_SHOW_BOARD_SETTINGS(true)
     },
