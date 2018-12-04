@@ -63,7 +63,7 @@ export default {
     this.SET_IS_SHOW_BOARD_SETTINGS(false)
   },
   updated() {
-    this.setCardDrgabble()
+    this.setCardDragabble()
   },
   methods: {
     ...mapMutations([
@@ -80,7 +80,7 @@ export default {
       return this.FETCH_BOARD({id: this.$route.params.bid})
         .then(() => this.loading = false)
     },
-    setCardDrgabble() {
+    setCardDragabble() {
       if (this.cDragger) this.cDragger.destroy()
       this.cDragger = dragger.init(Array.from(this.$el.querySelectorAll('.card-list')))
       this.cDragger.on('drop', (el, wrapper, target, siblings) => {
