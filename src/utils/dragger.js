@@ -2,8 +2,8 @@ import dragula from 'dragula'
 import 'dragula/dist/dragula.css'
 
 const dragger = {
-  init(conatiner) {
-    return dragula([...conatiner])
+  init(conatiner, options) {
+    return dragula([...conatiner], options)
   },
   siblings({ el, wrapper, candidates, type }) {
     const curId = el.dataset[type + 'Id'] * 1
