@@ -108,6 +108,7 @@ export default {
 .card-list {
   flex: 1 1 auto;
   overflow-y: scroll;
+  min-height: 10px;
 }
 .empty-card-item   {
   height: 10px;
